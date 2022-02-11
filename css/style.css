@@ -135,6 +135,11 @@ h6 {
 .button:hover {
   background-color: #6815dc;
 }
+@media (max-width: 47.99875em) {
+  .button {
+    filter: none;
+  }
+}
 
 .button-circle {
   width: 32px;
@@ -166,6 +171,19 @@ h6 {
 }
 .button-resume span {
   padding: 0px 17.41px 0px 0px;
+}
+
+.button-skill {
+  border: 2px solid #8338EC;
+  border-radius: 24px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  transition: background-color 0.3s ease 0s;
+  color: #000000;
+}
+.button-skill:hover {
+  border: 2px solid #537EC7;
 }
 
 .title {
@@ -488,9 +506,6 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.skills-about__skill:hover {
-  background-color: #2983C6;
 }
 @media (max-width: 397.98px) {
   .skills-about__skill {
