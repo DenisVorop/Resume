@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220213202924">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220214232519">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,10 +27,10 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link" data-goto=".home" data-goto-header data-goto-top="70">Home</a></li>
-							<li class="menu__item"><a href="#" class="menu__link" data-goto=".about" data-goto-header data-goto-top="70">About me</a></li>
-							<li class="menu__item"><a href="#" class="menu__link" data-goto=".projects" data-goto-header data-goto-top="70">Projects</a></li>
-							<li class="menu__item"><a href="#" class="menu__link" data-goto=".contacts" data-goto-header data-goto-top="70">Contacts</a>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".home" data-goto-header data-goto-top="-80">Home</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".about" data-goto-header data-goto-top="-80">About me</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".projects" data-goto-header data-goto-top="-80">Projects</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".contacts" data-goto-header data-goto-top="-80">Contacts</a>
 							</li>
 						</ul>
 					</nav>
@@ -41,7 +41,7 @@
 		<!-- data-goto-top="200" -->
 
 		<main class="page">
-			<section class="page__home home" data-watch="navigator" data-watch-threshold="0.5">
+			<section class="page__home home" data-watch="navigator" data-watch-threshold="0.7">
 				<div class="home__container">
 					<div class="home__info">
 						<div class="home__label">Hello, I’m <span>React Developer</span></div>
@@ -49,9 +49,7 @@
 						<div class="home__text">Я студент 3 курса московского университета. Начинающий веб разработчик с
 							большими амбициями в данном направлении. Моя цель как веб-разработчика — изучать и применять
 							технические навыки в ИТ-сфере, а также использовать свои знания для
-							реализации видения и миссии компании. Я хочу постоянно развиваться в веб-разработке, поэтому
-							с большим удовольствием принимал бы участие в создании проектов в команде, дабы перенять их
-							опыт и навыки. Считаю своей сильной стороной - обучение на практике, а не на теории.</div>
+							реализации видения и миссии компании.</div>
 						<div class="home__button">
 							<a href="#" class="button button-hire">Hire me</a>
 							<a href="./files/resume/resume.pdf" class="button button-resume" download>
@@ -66,7 +64,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__about about" data-watch="navigator" data-watch-threshold="0.99">
+			<section class="page__about about" data-watch="navigator" data-watch-threshold="0.7">
 				<div class="about__container">
 					<h2 class="about__title title">About me</h2>
 					<div class="decor"></div>
@@ -108,7 +106,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__projects projects" data-watch="navigator" data-watch-threshold="0.99">
+			<section class="page__projects projects" data-watch="navigator" data-watch-threshold="0.7">
 				<div class="projects__container">
 					<div class="projects__title title">Projects</div>
 					<div class="decor"></div>
@@ -167,24 +165,30 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__contacts contacts" data-watch="navigator" data-watch-threshold="0.99">
+			<section class="page__contacts contacts" data-watch="navigator" data-watch-threshold="0.7">
 				<div class="contacts__container">
 					<div class="contacts__body">
 						<div class="contacts__title title">Contacts</div>
 						<div class="decor"></div>
 						<div class="contacts__items items-contacts">
 							<div class="items-contacts__item">
-								<div class="items-contacts__label">HeadHunter</div>
-								<div class="items-contacts__text"><a href="https://hh.ru/resume/1dff76b7ff0569cd7e0039ed1f616541485670" target="_blank">Тыц для перехода на <span>HeadHunter</span></a></div>
+								<div class="items-contacts__label">
+									<picture><source srcset="img/contacts/hh.webp" type="image/webp"><img src="img/contacts/hh.png" alt="hh"></picture>
+								</div>
+								<div class="items-contacts__text"><a href="https://hh.ru/resume/1dff76b7ff0569cd7e0039ed1f616541485670" target="_blank">Тыц для перехода на <span class="headhunter">HeadHunter</span></a></div>
 							</div>
 							<div class="items-contacts__item">
-								<div class="items-contacts__label">Telegram</div>
+								<div class="items-contacts__label">
+									<picture><source srcset="img/contacts/tg.webp" type="image/webp"><img src="img/contacts/tg.png" alt="tg"></picture>
+								</div>
 								<div class="items-contacts__text"><a href="https://t.me/innvedent" target="_blank">Тыц
-										для перехода в <span>Telegram</span></a></div>
+										для перехода в <span class="telegram">Telegram</span></a></div>
 							</div>
 							<div class="items-contacts__item">
-								<div class="items-contacts__label">GitHub</div>
-								<div class="items-contacts__text"><a href="https://github.com/DenisVorop" target="_blank">Тыц для перехода на <span>GitHub</span></a></div>
+								<div class="items-contacts__label">
+									<picture><source srcset="img/contacts/gh.webp" type="image/webp"><img src="img/contacts/gh.png" alt="gh"></picture>
+								</div>
+								<div class="items-contacts__text"><a href="https://github.com/DenisVorop" target="_blank">Тыц для перехода на <span class="github">GitHub</span></a></div>
 							</div>
 						</div>
 					</div>
@@ -305,7 +309,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20220213202924"></script>
+	<script src="js/app.min.js?_v=20220214232519"></script>
 </body>
 
 <!-- <section class="page__car car">
