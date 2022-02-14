@@ -656,7 +656,7 @@ body::after {
 }
 @media (max-width: 1023.98px) {
   .about__skills {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 35px 0px;
   }
 }
 .about__education {
