@@ -717,14 +717,14 @@ body::after {
 
 .projects {
   height: 800px;
-  display: flex;
-  align-items: center;
+  transform: translate(0, 25%);
   opacity: 0.35;
   transition: all 0.3s ease 0s;
 }
 @media (max-width: 767.98px) {
   .projects {
     height: 500px;
+    transform: translate(0, 15%);
     opacity: 1;
   }
 }
@@ -735,10 +735,8 @@ body::after {
   padding: 0px 15px;
 }
 .projects__row {
-  margin: 40px 0px 0px 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .projects__title {
   margin: 0px 0px 15px 0px;
