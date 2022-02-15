@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220215004647">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220216011419">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
 							<li class="menu__item"><a href="#" class="menu__link" data-goto=".home" data-goto-header data-goto-top="0">Home</a></li>
 							<li class="menu__item"><a href="#" class="menu__link" data-goto=".about" data-goto-header data-goto-top="-40">About me</a></li>
 							<li class="menu__item"><a href="#" class="menu__link" data-goto=".projects" data-goto-header data-goto-top="-40">Projects</a></li>
-							<li class="menu__item"><a href="#" class="menu__link" data-goto=".contacts" data-goto-header data-goto-top="-40">Contacts</a>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".footer" data-goto-header data-goto-top="-40">Contacts</a>
 							</li>
 						</ul>
 					</nav>
@@ -108,7 +108,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__projects projects" data-watch="navigator" data-watch-threshold="0.7">
+			<section class="page__projects projects" data-watch="navigator" data-watch-threshold="0.93">
 				<div class="projects__container">
 					<div class="projects__title title">Projects</div>
 					<div class="decor"></div>
@@ -167,42 +167,59 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__contacts contacts" data-watch="navigator" data-watch-threshold="0.7">
-				<div class="contacts__container">
-					<div class="contacts__body">
-						<div class="contacts__title title">Contacts</div>
-						<div class="decor"></div>
-						<div class="contacts__items items-contacts">
-							<div class="items-contacts__item">
-								<div class="items-contacts__label">
-									<picture><source srcset="img/contacts/hh.webp" type="image/webp"><img src="img/contacts/hh.png" alt="hh"></picture>
-								</div>
-								<div class="items-contacts__text"><a href="https://hh.ru/resume/1dff76b7ff0569cd7e0039ed1f616541485670" target="_blank">Тыц для перехода на <span class="headhunter">HeadHunter</span></a></div>
-							</div>
-							<div class="items-contacts__item">
-								<div class="items-contacts__label">
-									<picture><source srcset="img/contacts/tg.webp" type="image/webp"><img src="img/contacts/tg.png" alt="tg"></picture>
-								</div>
-								<div class="items-contacts__text"><a href="https://t.me/innvedent" target="_blank">Тыц
-										для перехода в <span class="telegram">Telegram</span></a></div>
-							</div>
-							<div class="items-contacts__item">
-								<div class="items-contacts__label">
-									<picture><source srcset="img/contacts/gh.webp" type="image/webp"><img src="img/contacts/gh.png" alt="gh"></picture>
-								</div>
-								<div class="items-contacts__text"><a href="https://github.com/DenisVorop" target="_blank">Тыц для перехода на <span class="github">GitHub</span></a></div>
-							</div>
-						</div>
+		</main>
+		<footer class="footer" data-watch="navigator" data-watch-threshold="0.93">
+			<div class="footer__container">
+				<div class="footer__title title">Contacts info</div>
+				<div class="footer__body">
+					<div class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque earum, quibusdam
+						vitae laudantium nisi ex. Commodi nulla iure accusantium, eaque harum provident eum quae? Nemo ea
+						inventore assumenda eveniet vero.</div>
+					<div class="footer__links">
+						<div class="contact github"><a href="https://github.com/DenisVorop" class="footer__link" target="_blank"><picture><source srcset="img/contacts/gh.webp" type="image/webp"><img src="img/contacts/gh.png" alt="gh"></picture></a></div>
+						<div class="contact headhunter"><a href="https://hh.ru/resume/1dff76b7ff0569cd7e0039ed1f616541485670" class="footer__link" target="_blank"><picture><source srcset="img/contacts/hh.webp" type="image/webp"><img src="img/contacts/hh.png" alt="hh"></picture></a></div>
+						<div class="contact telegram"><a href="https://t.me/innvedent" class="footer__link" target="_blank"><picture><source srcset="img/contacts/tg.webp" type="image/webp"><img src="img/contacts/tg.png" alt="tg"></picture></a></div>
 					</div>
 				</div>
-			</section>
-		</main>
-		<!-- <footer class="footer">
-	<div class="footer__container">
-		footer
-	</div>
-</footer>
- -->
+			</div>
+			<div class="footer__date">Denis Voropaev 2022</div>
+		</footer>
+
+
+
+		<!-- <section class="page__contacts contacts" >
+		<div class="contacts__container">
+			<div class="contacts__body">
+				<div class="contacts__title title">Contacts</div>
+				<div class="decor"></div>
+				<div class="contacts__items items-contacts">
+					<div class="items-contacts__item">
+						<div class="items-contacts__label">
+							<picture><source srcset="img/contacts/hh.webp" type="image/webp"><img src="img/contacts/hh.png" alt="hh"></picture>
+						</div>
+						<div class="items-contacts__text"><a
+								href="https://hh.ru/resume/1dff76b7ff0569cd7e0039ed1f616541485670" target="_blank">Тыц
+								для перехода на <span class="headhunter">HeadHunter</span></a></div>
+					</div>
+					<div class="items-contacts__item">
+						<div class="items-contacts__label">
+							<picture><source srcset="img/contacts/tg.webp" type="image/webp"><img src="img/contacts/tg.png" alt="tg"></picture>
+						</div>
+						<div class="items-contacts__text"><a href="https://t.me/innvedent" target="_blank">Тыц
+								для перехода в <span class="telegram">Telegram</span></a></div>
+					</div>
+					<div class="items-contacts__item">
+						<div class="items-contacts__label">
+							<picture><source srcset="img/contacts/gh.webp" type="image/webp"><img src="img/contacts/gh.png" alt="gh"></picture>
+						</div>
+						<div class="items-contacts__text"><a href="https://github.com/DenisVorop" target="_blank">Тыц
+								для перехода на <span class="github">GitHub</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
 	</div>
 	<div id="popup1" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
@@ -311,7 +328,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20220215004647"></script>
+	<script src="js/app.min.js?_v=20220216011419"></script>
 </body>
 
 <!-- <section class="page__car car">
