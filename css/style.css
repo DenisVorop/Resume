@@ -536,10 +536,33 @@ body::after {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease 0s;
-  border: 2px solid #000;
 }
 .contact:hover {
   transform: scale(1.1);
+}
+
+.headhunter {
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.telegram {
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.github {
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  border-radius: 50%;
+}
+.github img {
+  margin: 0px 0px 1px 0px;
 }
 
 .home {
@@ -953,6 +976,25 @@ body::after {
   100% {
     bottom: 1px;
   }
+}
+.popup__text {
+  display: flex;
+  flex-direction: column;
+}
+.popup__text > :not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.popup__text span {
+  font-weight: 800;
+}
+.popup__link a {
+  color: #537EC7;
+}
+.popup__link a:hover {
+  text-decoration: underline;
+}
+.popup__note {
+  font-style: italic;
 }
 .swiper {
   overflow: hidden;
