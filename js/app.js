@@ -3647,17 +3647,17 @@
                 breakpoints: {
                     320: {
                         slidesPerView: 1,
-                        spaceBetween: 40,
+                        spaceBetween: 45,
                         autoHeight: true
                     },
                     665: {
                         slidesPerView: 2,
-                        spaceBetween: 40,
+                        spaceBetween: 45,
                         autoHeight: true
                     },
                     992: {
                         slidesPerView: 3,
-                        spaceBetween: 40,
+                        spaceBetween: 45,
                         autoHeight: true
                     }
                 },

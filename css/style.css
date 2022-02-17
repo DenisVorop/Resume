@@ -20,7 +20,7 @@ body {
 
 body {
   color: rgba(0, 0, 0, 0.8);
-  line-height: 1;
+  line-height: 1.4;
   font-family: "Mulish";
   font-size: 1rem;
   -ms-text-size-adjust: 100%;
@@ -172,22 +172,6 @@ body::after {
   visibility: visible;
 }
 
-[class*=-ibg] {
-  position: relative;
-}
-[class*=-ibg] img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-[class*=-ibg_contain] img {
-  object-fit: contain;
-}
-
 .button {
   filter: drop-shadow(2px 2px 10px rgba(215, 215, 215, 0.6));
   color: #fff;
@@ -297,11 +281,6 @@ body::after {
   width: 155px;
   background-color: #000;
   margin: 0px 0px 35px 0px;
-}
-
-.decor-education {
-  margin: 0px 0px 15px 0px;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .icon-menu {
@@ -523,7 +502,7 @@ body::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 5px 0;
   background-color: #000;
   color: gray;
 }
@@ -629,7 +608,6 @@ body::after {
 .home__text {
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
   margin: 0px 0px 65px 0px;
 }
 @media (max-width: 563.98px) {
@@ -879,7 +857,6 @@ body::after {
   }
 }
 .item-projects__label {
-  color: #000;
   font-weight: 800;
   font-size: 20px;
   line-height: 25px;
@@ -890,7 +867,6 @@ body::after {
   }
 }
 .item-projects__text {
-  color: rgba(0, 0, 0, 0.8);
   margin: 0px 0px 15px 0px;
   flex: 1 1 auto;
 }
@@ -980,6 +956,7 @@ body::after {
 .popup__text {
   display: flex;
   flex-direction: column;
+  margin: -25px 0px 0px 0px;
 }
 .popup__text > :not(:last-child) {
   margin: 0px 0px 10px 0px;
@@ -995,6 +972,102 @@ body::after {
 }
 .popup__note {
   font-style: italic;
+}
+
+.popup__close {
+  display: flex;
+  justify-content: end;
+}
+.popup__close span {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.popup__close span:hover::before {
+  transform: scale(1.1) rotate(-45deg);
+}
+.popup__close span:hover::after {
+  transform: scale(1.1) rotate(45deg);
+}
+.popup__close span::before {
+  transform: rotate(-45deg);
+  content: "";
+  transition: all 0.3s ease 0s;
+  top: 32px;
+  right: 20px;
+  position: absolute;
+  width: 25px;
+  height: 0.09375rem;
+  background-color: #000;
+}
+.popup__close span::after {
+  transform: rotate(45deg);
+  content: "";
+  transition: all 0.3s ease 0s;
+  top: 32px;
+  right: 20px;
+  position: absolute;
+  width: 25px;
+  height: 0.09375rem;
+  background-color: #000;
+}
+
+.join__auto-inner {
+  animation: go 15s infinite linear;
+}
+.join__auto {
+  position: relative;
+  z-index: 1;
+}
+.join__auto img {
+  animation: updown 1s infinite linear;
+  width: 101.5px;
+}
+.join__auto::before, .join__auto::after {
+  content: "";
+  position: absolute;
+  background: url(../img/car/wheel.svg) 0 0 no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  bottom: 8px;
+  z-index: -1;
+  animation: moving 3s infinite linear;
+}
+.join__auto::after {
+  content: "";
+  right: 18px;
+  bottom: 2px;
+}
+.join__auto::before {
+  content: "";
+  right: 73px;
+  bottom: 2px;
+}
+
+@keyframes go {
+  0% {
+    transform: translateX(550%);
+  }
+  100% {
+    transform: translateX(-550%);
+  }
+}
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes moving {
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 .swiper {
   overflow: hidden;

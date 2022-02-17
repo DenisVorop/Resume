@@ -19,8 +19,8 @@
 			<div class="header__container">
 				<a href="#" class="header__logo">DV</a>
 				<div class="header__button">
-					<a href="./black.html" class="button button-circle">
-						<img src="img/header/moon.svg" alt="moon">
+					<a href="./index.html" class="button button-circle">
+						<img src="img/header/sun.svg" alt="sun">
 					</a>
 				</div>
 				<div class="header__menu menu">
@@ -37,9 +37,6 @@
 				</div>
 			</div>
 		</header>
-
-		<!-- data-goto-top="200" -->
-
 		<main class="page">
 			<section class="page__home home" data-watch="navigator" data-watch-threshold="0.7">
 				<div class="home__container">
@@ -303,6 +300,44 @@
 
 	<script src="js/app.min.js?_v=20220217230821"></script>
 </body>
+
+<style>
+	body {
+		background-color: #000;
+		color: rgba(255, 255, 255, .8);
+		filter: none;
+	}
+
+	.title,
+	.label,
+	.home__name,
+	.button-skill {
+		color: #fff;
+	}
+
+	.header._header-show,
+	.menu-open .menu__body,
+	.menu-open .menu__list {
+		background-color: rgb(59, 59, 59, .8);
+	}
+
+	.decor,
+	.icon-menu span,
+	.icon-menu::after,
+	.icon-menu::before {
+		background-color: #fff;
+	}
+
+	.about,
+	.popup__content {
+		background-color: rgba(50, 50, 50, 0.99);
+	}
+
+	.popup__close span::before,
+	.popup__close span::after {
+		background-color: #fff;
+	}
+</style>
 
 <!-- <section class="page__car car">
 	<div class="car__container">
