@@ -956,7 +956,6 @@ body::after {
 .popup__text {
   display: flex;
   flex-direction: column;
-  margin: -25px 0px 0px 0px;
 }
 .popup__text > :not(:last-child) {
   margin: 0px 0px 10px 0px;
