@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220307121922">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220420011637">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
 			<div class="header__container">
 				<a href="#" class="header__logo">DV</a>
 				<div class="header__button">
-					<a href="./black.html" class="button button-circle">
+					<a href="../black.html" class="button button-circle">
 						<img src="img/header/moon.svg" alt="moon">
 					</a>
 				</div>
@@ -27,10 +27,10 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link" data-goto=".home" data-goto-header data-goto-top="0">Home</a></li>
-							<li class="menu__item"><a href="#" class="menu__link" data-goto=".about" data-goto-header data-goto-top="-40">About me</a></li>
-							<li class="menu__item"><a href="#" class="menu__link" data-goto=".projects" data-goto-header data-goto-top="-40">Projects</a></li>
-							<li class="menu__item"><a href="#" class="menu__link" data-goto=".footer" data-goto-header data-goto-top="-40">Contacts</a>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".home" data-goto-header data-goto-top="0">Приветствие</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".about" data-goto-header data-goto-top="-40">Обо мне</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".projects" data-goto-header data-goto-top="-40">Пет-проекты</a></li>
+							<li class="menu__item"><a href="#" class="menu__link" data-goto=".footer" data-goto-header data-goto-top="-40">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -44,16 +44,20 @@
 			<section class="page__home home" data-watch="navigator" data-watch-threshold="0.7">
 				<div class="home__container">
 					<div class="home__info">
-						<div class="home__label">Hello, I’m <span>React Developer</span></div>
-						<h1 class="home__name">Denis <br> Voropaev</h1>
-						<div class="home__text">I am a 3rd year student at Moscow University. Beginner web developer
-							with big ambitions in this direction. My goal as a web developer is to learn and apply
-							technical skills in the IT-field, and use my knowledge to realize the vision and mission of
-							the company.</div>
+						<div class="home__label">Привет, я<span> React разработчик</span></div>
+						<h1 class="home__name">Денис <br> Воропаев</h1>
+						<div class="home__text">
+							Cтудент 3 курса московского университета. Начинающий веб разработчик
+							с большими амбициями в данном направлении. Моя цель как веб- разработчика — изучать и
+							применять технические навыки в ИТ-сфере, а также использовать свои знания для реализации
+							видения и миссии компании.
+						</div>
 						<div class="home__button">
-							<a href="https://hh.ru/resume/1dff76b7ff0569cd7e0039ed1f616541485670" target="_blank" class="button button-hire">Hire me</a>
+							<a href="https://hh.ru/resume/1dff76b7ff0569cd7e0039ed1f616541485670" target="_blank" class="button button-hire">
+								Нанять меня
+							</a>
 							<a href="./files/resume/resume.pdf" class="button button-resume" download>
-								<span>Download Resume</span><img src="img/homePage/arrow.svg" alt="arrow">
+								<span>Скачать резюме</span><img src="img/homePage/arrow.svg" alt="arrow">
 							</a>
 						</div>
 					</div>
@@ -66,11 +70,11 @@
 			</section>
 			<section class="page__about about" data-watch="navigator" data-watch-threshold="0.7">
 				<div class="about__container">
-					<h2 class="about__title title">About me</h2>
+					<h2 class="about__title title">Обо мне</h2>
 					<div class="decor"></div>
 					<div class="about__body">
 						<div class="about__skills skills-about">
-							<div class="skills-about__label label">Technical skills</div>
+							<div class="skills-about__label label">Технические навыки</div>
 							<div class="skills-about__skills">
 								<div class="skills-about__skill button-skill">HTML5</div>
 								<div class="skills-about__skill button-skill">CSS3</div>
@@ -82,14 +86,17 @@
 								<div class="skills-about__skill button-skill">JavaScript</div>
 								<div class="skills-about__skill button-skill">Typescript</div>
 								<div class="skills-about__skill button-skill">React</div>
+								<div class="skills-about__skill button-skill">React-router-dom</div>
 								<div class="skills-about__skill button-skill">Redux</div>
-								<div class="skills-about__skill button-skill">GIT</div>
-								<div class="skills-about__skill button-skill">npm / yarn</div>
+								<div class="skills-about__skill button-skill">Redux-thunk</div>
+								<div class="skills-about__skill button-skill">Formik</div>
+								<div class="skills-about__skill button-skill">Yup</div>
+								<div class="skills-about__skill button-skill">Axios</div>
 								<div class="skills-about__skill button-skill">FIGMA</div>
 							</div>
 						</div>
 						<div class="about__education education-about">
-							<div class="education-about__label label">Education <br> & qualification</div>
+							<div class="education-about__label label">Образование <br> & квалификация</div>
 							<div class="education-about__educations">
 								<!-- <div class="education-about__education">
 									[Университет], Бакалавр по направлению «Техносферная безопасность» - МГТУ «СТАНКИН»,
@@ -97,7 +104,8 @@
 								</div> -->
 								<!-- <div class="decor decor-education"></div> -->
 								<div class="education-about__education">
-									[University], BSc in Technosphere Safety (2019-2023) – MSUT «STANKIN», Moscow
+									[Университет], Бакалавр по направлению «Техносферная безопасность» (2019-2023) -
+									МГТУ «СТАНКИН», Москва
 								</div>
 								<!-- <div class="decor decor-education"></div> -->
 							</div>
@@ -107,7 +115,7 @@
 			</section>
 			<section class="page__projects projects" data-watch="navigator" data-watch-threshold="0.93">
 				<div class="projects__container">
-					<div class="projects__title title">Projects</div>
+					<div class="projects__title title">Пет-проекты</div>
 					<div class="decor"></div>
 					<div class="projects__row">
 						<button type="button" class="projects__arrow swiper-button-prev"><img src="img/icons/arrow-l.svg" alt="arrow"></button>
@@ -118,54 +126,56 @@
 										<div class="item-projects__label">Social Network</div>
 										<div class="item-projects__date">2022</div>
 									</div>
-									<div class="item-projects__text">The small social network built with ReactJs.
-									</div>
-									<a href="#" class="item-projects__more button-more" data-popup="#popup1">More...</a>
-								</div>
-								<div class="item-projects__body swiper-slide">
-									<div class="item-projects__info">
-										<div class="item-projects__label">Pizza</div>
-										<div class="item-projects__date">2022</div>
-									</div>
-									<div class="item-projects__text">The small pizza-shop created to practice ReactJs and
-										Redux skills.</div>
-									<a href="" class="item-projects__more button-more" data-popup="#popup6">More...</a>
+									<div class="item-projects__text">Маленькая социальная сеть, созданная с помощью ReactJs</div>
+									<a href="#" class="item-projects__more button-more" data-popup="#popup1">Еще...</a>
 								</div>
 								<div class="item-projects__body swiper-slide">
 									<div class="item-projects__info">
 										<div class="item-projects__label">MiniBook-shop</div>
 										<div class="item-projects__date">2022</div>
 									</div>
-									<div class="item-projects__text">The small book-shop created to practice ReactJs and
-										Redux skills.</div>
-									<a href="" class="item-projects__more button-more" data-popup="#popup2">More...</a>
+									<div class="item-projects__text">Маленький книжный магазин, созданный для отработки навыков ReactJs & Redux</div>
+									<a href="" class="item-projects__more button-more" data-popup="#popup2">Еще...</a>
 								</div>
 								<div class="item-projects__body swiper-slide">
 									<div class="item-projects__info">
 										<div class="item-projects__label">LuxTrader</div>
 										<div class="item-projects__date">2021</div>
 									</div>
-									<div class="item-projects__text">The landing page designed to practice layout skills
-										and BEM methodology.</div>
-									<a href="" class="item-projects__more button-more" data-popup="#popup3">More...</a>
+									<div class="item-projects__text">Одностраничный сайт, созданный длч отработки навыков верстки и БЭМ методологии</div>
+									<a href="" class="item-projects__more button-more" data-popup="#popup3">Еще...</a>
 								</div>
 								<div class="item-projects__body swiper-slide">
 									<div class="item-projects__info">
 										<div class="item-projects__label">Funiro</div>
 										<div class="item-projects__date">2021</div>
 									</div>
-									<div class="item-projects__text">The landing page designed to practice layout skills
-										and BEM methodology.</div>
-									<a href="" class="item-projects__more button-more" data-popup="#popup4">More...</a>
+									<div class="item-projects__text">Одностраничный сайт, созданный длч отработки навыков верстки и БЭМ методологии</div>
+									<a href="" class="item-projects__more button-more" data-popup="#popup4">Еще...</a>
 								</div>
 								<div class="item-projects__body swiper-slide">
 									<div class="item-projects__info">
 										<div class="item-projects__label">Relvise</div>
 										<div class="item-projects__date">2021</div>
 									</div>
-									<div class="item-projects__text">The landing page designed to practice layout skills
-										and BEM methodology.</div>
-									<a href="" class="item-projects__more button-more" data-popup="#popup5">More...</a>
+									<div class="item-projects__text">Одностраничный сайт, созданный длч отработки навыков верстки и БЭМ методологии</div>
+									<a href="" class="item-projects__more button-more" data-popup="#popup5">Еще...</a>
+								</div>
+								<div class="item-projects__body swiper-slide">
+									<div class="item-projects__info">
+										<div class="item-projects__label">Pizza</div>
+										<div class="item-projects__date">2022</div>
+									</div>
+									<div class="item-projects__text">Маленький магазин пицц, созданный для отработки навыков ReactJs & Redux</div>
+									<a href="" class="item-projects__more button-more" data-popup="#popup6">Еще...</a>
+								</div>
+								<div class="item-projects__body swiper-slide">
+									<div class="item-projects__info">
+										<div class="item-projects__label">CRM</div>
+										<div class="item-projects__date">2022</div>
+									</div>
+									<div class="item-projects__text">Небольшая CRM система для офтмальмологической клиники</div>
+									<a href="" class="item-projects__more button-more" data-popup="#popup7">Еще...</a>
 								</div>
 							</div>
 						</div>
@@ -176,10 +186,11 @@
 		</main>
 		<footer class="footer" data-watch="navigator" data-watch-threshold="0.93">
 			<div class="footer__container">
-				<div class="footer__title title">Contacts info</div>
+				<div class="footer__title title">Контактная информация</div>
 				<div class="footer__body">
-					<div class="footer__text">If you are even a little interested in me, please contact me on a headhunter or
-						telegram. Thank you for viewing resume.</div>
+					<div class="footer__text">Если вы заинтересовались мной, свяжитесь,
+						пожалуйста, со мной на HeadHunter или в Telegram. <br /> Я искренне благодарю
+						Вас за уделенное время.</div>
 					<div class="footer__links">
 						<div class="contact github"><a href="https://github.com/DenisVorop" class="footer__link" target="_blank"><picture><source srcset="img/contacts/gh.webp" type="image/webp"><img src="img/contacts/gh.png" alt="gh"></picture></a></div>
 						<div class="contact headhunter"><a href="https://hh.ru/resume/1dff76b7ff0569cd7e0039ed1f616541485670" class="footer__link" target="_blank"><picture><source srcset="img/contacts/hh.webp" type="image/webp"><img src="img/contacts/hh.png" alt="hh"></picture></a></div>
@@ -241,14 +252,19 @@
 			<div class="popup__content">
 				<div class="popup__close"><span data-close></span></div>
 				<div class="popup__text">
-					<div class="popup__description"><span>Описание: </span>Небольшая социальная сеть, сделанная на ReactJs.
+					<div class="popup__description"><span>Описание: </span>Небольшая социальная
+						сеть, сделанная на ReactJs.
 					</div>
-					<div class="popup__opportunities"><span>Возможности: </span>Авторизация, изменение данных в профиле
+					<div class="popup__opportunities"><span>Возможности: </span>Авторизация,
+						изменение данных в профиле
 						(фото, имя пользователя, ссылки
-						на соц. сети, о себе, скилы, изменение статуса), создание постов (локально), общий чат,
-						добавление в друзья, удаление из друзей, переход на странички пользователей,
+						на соц. сети, о себе, скилы, изменение статуса), создание постов
+						(локально), общий чат,
+						добавление в друзья, удаление из друзей, переход на странички
+						пользователей,
 						фильтрация на друзья/все/не друзья).</div>
-					<div class="popup__stack"><span>Стек: </span>TypeScript, ReactJs + хуки, Redux, Redux-thunk, Axios, Formik,
+					<div class="popup__stack"><span>Стек: </span>TypeScript, ReactJs + хуки,
+						Redux, Redux-thunk, Axios, Formik,
 						Yup, Rest API, WebSocket, SCSS</div>
 					<div class="popup__link"><span>Ссылка: </span><a href="https://denisvorop.github.io/SocialNetwork/" target="_blank">Social Network</a></div>
 					<div class="popup__note">Логин – saskeazaske@mail.ru, Пароль – free</div>
@@ -262,9 +278,11 @@
 			<div class="popup__content">
 				<div class="popup__close"><span data-close></span></div>
 				<div class="popup__text">
-					<div class="popup__description"><span>Описание: </span>Маленький магазин, созданный для отработки
+					<div class="popup__description"><span>Описание: </span>Маленький магазин,
+						созданный для отработки
 						навыков работы с ReactJs и Redux.</div>
-					<div class="popup__opportunities"><span>Возможности: </span>Добавить книгу в корзину, удалить книги,
+					<div class="popup__opportunities"><span>Возможности: </span>Добавить книгу в
+						корзину, удалить книги,
 						посмотреть общую стоимость, фильтрация по автору/стоимости/все</div>
 					<div class="popup__stack"><span>Стек: </span>ReactJs, Redux, SCSS</div>
 					<div class="popup__link"><span>Ссылка: </span><a href="https://denisvorop.github.io/miniBookShop/" target="_blank">Mini book shop</a></div>
@@ -278,9 +296,11 @@
 			<div class="popup__content">
 				<div class="popup__close"><span data-close></span></div>
 				<div class="popup__text">
-					<div class="popup__description"><span>Описание: </span>Лендинг, созданный для отработки навыков верстки
+					<div class="popup__description"><span>Описание: </span>Лендинг, созданный
+						для отработки навыков верстки
 						и методологии БЭМ.</div>
-					<div class="popup__opportunities"><span>Возможности: </span>Посмотреть ховеры на кнопочках</div>
+					<div class="popup__opportunities"><span>Возможности: </span>Посмотреть
+						ховеры на кнопочках</div>
 					<div class="popup__stack"><span>Стек: </span>HTML, SCSS</div>
 					<div class="popup__link"><span>Ссылка: </span><a href="https://denisvorop.github.io/luxtrader/" target="_blank">LuxTrader Landing Page</a></div>
 				</div>
@@ -293,9 +313,11 @@
 			<div class="popup__content">
 				<div class="popup__close"><span data-close></span></div>
 				<div class="popup__text">
-					<div class="popup__description"><span>Описание: </span>Лендинг, созданный для отработки навыков верстки
+					<div class="popup__description"><span>Описание: </span>Лендинг, созданный
+						для отработки навыков верстки
 						и методологии БЭМ.</div>
-					<div class="popup__opportunities"><span>Возможности: </span>Посмотреть ховеры на кнопочках</div>
+					<div class="popup__opportunities"><span>Возможности: </span>Посмотреть
+						ховеры на кнопочках</div>
 					<div class="popup__stack"><span>Стек: </span>HTML, SCSS</div>
 					<div class="popup__link"><span>Ссылка: </span><a href="https://denisvorop.github.io/funiro/" target="_blank">Funiro Landing Page</a></div>
 				</div>
@@ -308,9 +330,11 @@
 			<div class="popup__content">
 				<div class="popup__close"><span data-close></span></div>
 				<div class="popup__text">
-					<div class="popup__description"><span>Описание: </span>Лендинг, созданный для отработки навыков верстки
+					<div class="popup__description"><span>Описание: </span>Лендинг, созданный
+						для отработки навыков верстки
 						и методологии БЭМ.</div>
-					<div class="popup__opportunities"><span>Возможности: </span>Посмотреть ховеры на кнопочках</div>
+					<div class="popup__opportunities"><span>Возможности: </span>Посмотреть
+						ховеры на кнопочках</div>
 					<div class="popup__stack"><span>Стек: </span>HTML, SCSS</div>
 					<div class="popup__link"><span>Ссылка: </span><a href="https://denisvorop.github.io/relvise/" target="_blank">Relvise Landing Page</a></div>
 				</div>
@@ -323,17 +347,49 @@
 			<div class="popup__content">
 				<div class="popup__close"><span data-close></span></div>
 				<div class="popup__text">
-					<div class="popup__description"><span>Описание: </span>SPA Приложение для пиццерии</div>
-					<div class="popup__opportunities"><span>Возможности: </span>Выбор размера пиццы, тесто, добавление в
-						корзину, +1/-1 в корзине, удаление полностью из корзины, очистка всей корзины </div>
-					<div class="popup__stack"><span>Стек: </span>ReactJS + хуки, React Router, Redux, Redux thunk, json-server, Axios, SCSS </div>
+					<div class="popup__description"><span>Описание: </span>SPA Приложение для
+						пиццерии</div>
+					<div class="popup__opportunities"><span>Возможности: </span>Выбор размера
+						пиццы, тесто, добавление в
+						корзину, +1/-1 в корзине, удаление полностью из корзины, очистка всей
+						корзины </div>
+					<div class="popup__stack"><span>Стек: </span>ReactJS + хуки, React Router,
+						Redux, Redux thunk, json-server, Axios, SCSS </div>
 					<div class="popup__link"><span>Ссылка: </span><a href="https://denis-vorop-pizza.herokuapp.com/" target="_blank">Pizza</a></div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20220307121922"></script>
+	<div id="popup7" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__close"><span data-close></span></div>
+				<div class="popup__text">
+					<div class="popup__description"><span>Описание: </span>PERN Приложение для
+						офтмальмологической клиники</div>
+					<div class="popup__opportunities"><span>Возможности: </span>записывать
+						пациентов, добавлять карты пациентов, просматривать карты пациентов, искать
+						определенную карту пациента</div>
+					<div class="popup__stack">
+						<span>Стек (Клиент): </span>ReactJs, Redux,
+						React-router-dom, SCSS, Json-server, Axios, Formik Redux-thunk, Yup
+					</div>
+					<div class="popup__stack">
+						<span>Стек (Сервер): </span>NodeJS, PostgreSQL
+					</div>
+					<div class="popup__link">
+						<span>Ссылка: </span><a href="https://github.com/DenisVorop/crm-client" target="_blank">GitHub (клиент)</a>
+					</div>
+					<div class="popup__link">
+						<span>Ссылка: </span><a href="https://github.com/DenisVorop/crm-server" target="_blank">GitHub (сервер)</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20220420011637"></script>
 </body>
 
 <!-- <section class="page__car car">
