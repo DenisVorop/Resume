@@ -257,6 +257,10 @@ body::after {
   line-height: 45px;
   color: #000000;
 }
+.title span {
+  font-size: 18px;
+  opacity: 0.7;
+}
 
 .label {
   font-weight: 800;
